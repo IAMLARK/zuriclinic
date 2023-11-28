@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DEPARTMENTS - ZURI HOSPITAL</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+    {% load static %}
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon2.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/fontawesome-free/css/all.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Medicio
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+      <div class="align-items-center d-none d-md-flex">
+         <i class="fa-solid fa-calendar-days"></i>Monday - Saturday, 8AM to 10PM &nbsp &nbsp
+          <i class="fa-regular fa-envelope"></i>info@zurihospital.org
+
+      </div>
+      <div class="d-flex align-items-center">
+         <i class="fa-brands fa-facebook"></i> &nbsp
+          <i class="fa-brands fa-x-twitter"></i>&nbsp
+          <i class="fa-brands fa-instagram"></i>&nbsp
+          <i class="fa-brands fa-linkedin"></i>&nbsp
+          <i class="fa-brands fa-youtube"></i>&nbsp &nbsp
+        <i class="bi bi-phone">Call us now +254 712 474 054</i>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <a href="{% url 'index' %}" class="logo me-auto">Zuri<img src="{% static 'assets/img/favicon2.png' %}" alt=""></a>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="{% url 'index' %}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'about' %}">About</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'services' %}">Services</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'departments' %}">Departments</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'doctors' %}">Doctors</a></li>
+          <li class="dropdown"><a href="#"><span>Resources</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Partners</a></li>
+              <li class="dropdown"><a href="#"><span>Our Branches</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Nairobi</a></li>
+                  <li><a href="#">Mombasa</a></li>
+                  <li><a href="#">Nakuru</a></li>
+                  <li><a href="#">Kiambu</a></li>
+                  <li><a href="#">Embu</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Videos</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">News & Events</a></li>
+              <li><a href="#">Tenders and Vacancies</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="{% url 'contacts' %}">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+       &nbsp
+      &nbsp
+      &nbsp
+
+        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Login
+    </button>
+    <ul class="dropdown-menu bg-primary">
+      <li><a class="dropdown-item" href="{% url 'register_patient' %}">Patient</a></li>
+      <li><a class="dropdown-item" href="{% url 'login_doctor' %}">Doctor</a></li>
+      <li><a class="dropdown-item" href="{% url 'login_admin' %}">Admin</a></li>
+    </ul>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>DEPARTMENTS</h2>
+          <ol>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li>Departments</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+    <section class="inner-page">
+      <div class="container">
+        <p>
+          <!-- ======= Departments Section ======= -->
+    <section id="departments" class="departments">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Explore Our Specialized Departments</h2>
+          <p>Welcome to Zuri Hospital, where our commitment to comprehensive healthcare is reflected in the array of specialized departments designed to meet the diverse needs of our patients. Our dedicated teams within each department work collaboratively to provide expert care with a focus on your well-being. Discover the specialized departments at Zuri Hospital:</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+                  <h4>Medical/Surgical Units</h4>
+                  <p>From routine check-ups to post-surgical recovery, we prioritize your well-being throughout your healthcare journey.</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+                  <h4>Emergency Department (ED)</h4>
+                  <p> Our dedicated emergency medical team is equipped to handle a broad spectrum of urgent healthcare needs, ensuring rapid and expert responses in critical situations.
+</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+                  <h4>Obstetrics and Gynecology</h4>
+                  <p>Our Obstetrics and Gynecology (OB/GYN) department focuses on women's health throughout every stage of life.</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+                  <h4>Pediatrics</h4>
+                  <p>The Pediatrics department at Zuri Hospital is dedicated to the health and well-being of our youngest patients.</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-8">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <h3>Medical/Surgical Units</h3>
+                <p class="fst-italic">our experienced medical and surgical teams collaborate to provide personalized care for a wide range of health conditions</p>
+                <img src="{% static 'assets/img/departments-1.jpg' %}" alt="" class="img-fluid">
+                <p>From routine check-ups to post-surgical recovery, we prioritize your well-being throughout your healthcare journey</p>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <h3>Emergency Department (ED)</h3>
+                <p class="fst-italic">Zuri Hospital's Emergency Department (ED) operates 24/7, providing immediate care for acute medical conditions and emergencies</p>
+                <img src="{% static 'assets/img/t7.jpg' %}" alt="" class="img-fluid">
+                <p>Your health and safety are our top priorities in times of urgency. </p>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <h3>Obstetrics and Gynecology</h3>
+                <p class="fst-italic">From routine gynecological check-ups to prenatal and postpartum care, </p>
+                <img src="{% static 'assets/img/departments-3.jpg' %}" alt="" class="img-fluid">
+                <p>our expert team is dedicated to ensuring the health and comfort of women in our community</p>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <h3>Pediatrics</h3>
+                <p class="fst-italic">Our pediatric specialists offer comprehensive care for infants, children, and adolescents</p>
+                <img src="{% static 'assets/img/departments-4.jpg' %}" alt="" class="img-fluid">
+                <p>We understand the unique healthcare needs of children, and our compassionate team is committed to providing family-centered care in a child-friendly environment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Departments Section -->
+
+        </p>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Zuri Hospital</h3>
+              <p>
+                Karen Ampex <br>
+                Nairobi, Kenya<br><br>
+                <strong>Phone:</strong> +254 712 474 054<br>
+                <strong>Email:</strong> info@zurihospital.org<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'about' %}">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'services' %}">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Primary Care</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Emergency Care</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Specialized Medical Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Diagnostic Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Surgical Services</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Share with us your email to recieve all latest news and reports</p>
+            <form action="" method="post">
+              <input type="email" placeholder="Enter Your Email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Zuri Hospital</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medicio-free-bootstrap-theme/ -->
+        Designed by <a href="">LarkExpertTech</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

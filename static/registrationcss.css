@@ -1,0 +1,27 @@
+form{
+    border: 2px solid black;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: teal;
+
+}
+body{
+    justify-content: center;
+    display: flex;
+    margin: 150px;
+    background-image: url("static/assets/img/slide/t2.jpg");
+    background-repeat: no-repeat;
+    background-size: 1370px 655px;
+}
+
+h2{
+    text-align: center;
+}
+
+*{
+    text-decoration: none;
+}
+
+a{
+    color: black;
+}
